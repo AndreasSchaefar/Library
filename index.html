@@ -11,25 +11,31 @@
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Overlord_%28novel_series%29.svg" alt="overlord-logo" width="350px">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Overlord_%28novel_series%29.svg" alt="overlord-logo" width="350px" class="overlord-logo">
         <div class="menu">
-            <img src="menu.svg" alt="menu" width="50px">
+            <ul class="menu-links">
+                <li class="menu-link" id="add-book">Add</li>
+                <li class="menu-link" id="remove-book">Remove</li>
+            </ul>
         </div>
     </header>
-    <nav>
-        <li class="nav-link link-active">Reading</li>
-        <li class="nav-link">Wishlist</li>
-        <li class="nav-link">Purchased</li>
-        <li class="nav-link">All</li>
-    </nav>
     <main>
-        <div class="books">
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-link link-active">Reading</li>
+                <li class="nav-link">Wishlist</li>
+                <li class="nav-link">Purchased</li>
+                <li class="nav-link">All</li>
+            </ul>
+        </nav>
+        <section class="books">
             <div class="book">
-                <!-- <img src="book-covers/Overlord_Volume_1.webp" alt="cover" > -->
+                <div class="book__cover">
+                    <img src="book-covers/Overlord_Volume_1.webp" alt="cover">
+                </div>
                 <div class="book__name">There are no books yet</div>
                 <div class="book__author">Developing ...</div>
-            </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
