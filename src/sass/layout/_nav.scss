@@ -1,0 +1,39 @@
+@use '../abstracts/variables';
+
+nav {
+  background-color: variables.$nav-clr;
+  color: #ffffff;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.nav-link {
+  opacity: 70%;
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  opacity: 100%;
+  font-weight: 400;
+}
+
+.link-active {
+  opacity: 100%;
+  font-weight: 400;
+}
+
+.nav-links {
+  position: sticky;
+  top: 0px;
+}

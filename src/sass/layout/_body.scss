@@ -1,0 +1,7 @@
+@use '../abstracts/variables';
+
+body {
+  background-color: variables.$body-clr;
+  display: flex;
+  flex-direction: column;
+}

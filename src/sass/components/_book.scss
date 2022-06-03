@@ -1,0 +1,27 @@
+@use '../abstracts/variables';
+
+.book {
+  display: flex;
+  flex-direction: column;
+  min-height: 590px;
+  background-color: variables.$modal-bg-clr;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.book__cover {
+  justify-self: start;
+}
+
+.book__info {
+  justify-self: end;
+}
+
+.book__name {
+  font-weight: 600;
+}
+
+.book__author {
+  color: rgba(0, 0, 0, 0.75);
+}

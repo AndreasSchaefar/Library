@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/book.svg" type="icon/svg" />
+    <title>My Library</title>
+  </head>
+  <body>
+    <div id="addModal" class="modal">
+      <div class="modal-content">
+        <img
+          src="images/close-circle-outline.svg"
+          alt="&nbsp;"
+          class="close-button"
+        />
+        <h1 class="modal-header">Add a book</h1>
+        <div class="modal__content">
+          <form action="" id="add-book-form" class="modal-form">
+            <label for="imageFile" class="image-label">
+              <img src="images/file-image-plus-outline.svg" alt="img icon" />
+              Upload a cover
+            </label>
+            <input
+              type="file"
+              name="imageFile"
+              id="imageFile"
+              accept="book-covers/*"
+            />
+            <input
+              type="text"
+              name="bookName"
+              id="bookName"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="text"
+              name="bookAuthor"
+              id="bookAuthor"
+              placeholder="Author"
+              required
+            />
+            <input
+              type="number"
+              name="numPages"
+              id="numPages"
+              min="20"
+              max="1000"
+              placeholder="Number of Pages"
+              required
+            />
+            <div class="checkbox-field">
+              <label for="read">Have you read it?</label>
+              <input type="checkbox" name="read" id="read" />
+            </div>
+          </form>
+        </div>
+        <input
+          type="submit"
+          form="add-book-form"
+          value="Submit"
+          class="submit-btn"
+        />
+      </div>
+    </div>
+    <header>
+      <div class="logo">
+        <img src="images/book.svg" alt="book-logo" width="100px" />
+        <h1>My Library</h1>
+      </div>
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="menu-link" data-add-book>Add</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link link-active">Reading</li>
+          <li class="nav-link">Wishlist</li>
+          <li class="nav-link">Purchased</li>
+          <li class="nav-link">All</li>
+        </ul>
+      </nav>
+      <section class="books">
+        <!-- <div class="book">
+                <div class="book__cover">
+                    <img src="book-covers/Overlord_Volume_1.webp" alt="cover">
+                </div>
+                <div class="book_info">
+                    <div class="book__name">There are no books yet</div>
+                    <div class="book__author">Developing ...</div>
+                </div>
+            </div> -->
+      </section>
+    </main>
+  </body>
+</html>
